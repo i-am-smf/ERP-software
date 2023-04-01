@@ -43,10 +43,12 @@ passwordentry.place(relx=0.5,rely=0.59,anchor=CENTER,height=40,width=350)
 v = StringVar(loginframe, "1")
 
 student_radio_button=Radiobutton(loginframe,text="Student",font=("Arial Rounded MT Bold",15),variable=v,value="1",background="cadetblue2")
-student_radio_button.place(relx=0.3,rely=0.7,anchor=CENTER)
+student_radio_button.place(relx=0.4,rely=0.7,anchor=CENTER)
 
 staff_radio_button=Radiobutton(loginframe,text="Staff",font=("Arial Rounded MT Bold",15),variable=v,value="2",background="cadetblue2")
-staff_radio_button.place(relx=0.28,rely=0.8,anchor=CENTER)
+staff_radio_button.place(relx=0.6,rely=0.7,anchor=CENTER)
 
+login_button=Button(loginframe,text="Login",width=20,height=2,background="cadetblue3")
+login_button.place(relx=0.5,rely=0.8,anchor=CENTER)
 
 main.mainloop()
